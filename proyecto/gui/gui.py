@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox
-from gui.gui_helpers import open_text_file, open_json_file, update_tokens
+from gui.gui_helpers import open_text_file, open_json_file, update_tokens, generate_report
 from logic.tokenizer import Tokenizer
 
 class LanguageTokenizerGUI:
@@ -38,34 +38,51 @@ class LanguageTokenizerGUI:
 
         self._create_menu()
 
+        # Add a button to generate the report
+        report_button = tk.Button(self.scrollable_frame, text="Generate Report", command=self.generate_report, font=("Helvetica", 12), bg="#4CAF50", fg="white")
+        report_button.grid(padx=10, pady=10)
+        report_button.bind("<Enter>", lambda e: report_button.config(bg="#45a049"))
+        report_button.bind("<Leave>", lambda e: report_button.config(bg="#4CAF50"))
+
         self.canvas.pack(side="left", fill="both", expand=True)
         self.scrollbar.pack(side="right", fill="y")
 
     def _create_file_frame(self, parent, label_text, default_path):
-        frame = tk.Frame(parent, padx=10, pady=10, bg="#f0f0f0")
+        # Frame for the file section
+        frame = tk.Frame(parent, padx=10, pady=10, bg="#f0f0f0", bd=2, relief="groove")
         frame.grid(padx=10, pady=10, sticky="nsew")
 
-        label = tk.Label(frame, text=label_text, font=("Helvetica", 14, "bold"), bg="#f0f0f0")
+        # Label for the file section
+        label = tk.Label(frame, text=label_text, font=("Helvetica", 16, "bold"), bg="#f0f0f0")
         label.grid(row=0, column=1, sticky="w", padx=5, pady=5)
 
+        # Entry widget for the file path
         entry = tk.Entry(frame, state=tk.NORMAL, width=50, font=("Helvetica", 12))
         entry.grid(row=1, column=1, sticky="ew", padx=5, pady=5)
 
+        # Text widget for displaying file content
         text_widget = tk.Text(frame, height=10, width=50, font=("Helvetica", 12))
         text_widget.grid(row=2, column=1, sticky="nsew", padx=5, pady=5)
 
+        # Button to open the file
         open_button = tk.Button(frame, text=f"Open {label_text}", command=lambda: open_text_file(
-            entry, text_widget, self.tokenizer, undefined_words_frame, evaluation_frame), font=("Helvetica", 12))
+            entry, text_widget, self.tokenizer, undefined_words_frame, evaluation_frame), font=("Helvetica", 12), bg="#4CAF50", fg="white")
         open_button.grid(row=1, column=0, sticky="w", padx=5, pady=5)
+        open_button.bind("<Enter>", lambda e: open_button.config(bg="#45a049"))
+        open_button.bind("<Leave>", lambda e: open_button.config(bg="#4CAF50"))
 
+        # Frame for evaluation results
+        evaluation_frame = tk.Frame(frame, padx=10, pady=10, bg="#f0f0f0")
+        evaluation_frame.grid(row=2, column=0, rowspan=3, sticky="nsew", padx=5, pady=5)
+
+        # Frame for undefined words
         undefined_words_frame = tk.Frame(frame, padx=10, pady=10, bg="#f0f0f0")
         undefined_words_frame.grid(row=3, column=1, sticky="nsew", padx=5, pady=5)
 
-        evaluation_frame = tk.Frame(frame, padx=10, pady=10, bg="#f0f0f0")
-        evaluation_frame.grid(row=4, column=1, sticky="nsew", padx=5, pady=5)
-
+        # Open the default file
         open_text_file(entry, text_widget, self.tokenizer, undefined_words_frame, evaluation_frame, default_path=default_path)
 
+        # Configure grid weights
         frame.grid_rowconfigure(2, weight=1)
         frame.grid_rowconfigure(3, weight=1)
         frame.grid_rowconfigure(4, weight=1)
@@ -86,6 +103,11 @@ class LanguageTokenizerGUI:
         edit_menu = tk.Menu(menu, tearoff=0)
         menu.add_cascade(label="Edit", menu=edit_menu)
         edit_menu.add_command(label="Update Tokens", command=lambda: update_tokens(self.tokenizer, self.root))
+
+    def generate_report(self):
+        examples_folder = "proyecto/ejemplos"
+        report_file = "proyecto/report.txt"
+        generate_report(self.tokenizer, examples_folder, report_file)
 
     def run(self):
         self.root.mainloop()
