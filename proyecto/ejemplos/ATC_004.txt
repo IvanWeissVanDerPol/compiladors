@@ -1,0 +1,9 @@
+¿Qué quiere?
+Número de cliente.
+Espere.
+Su saldo es de doscientos mil. ¿Algo más?
+No. Solo le estoy diciendo su saldo.
+No tengo tiempo para eso. Llame más tarde.
+No están disponibles. Llame otro día.
+Haga lo que quiera. ¿Algo más?
+Adiós.

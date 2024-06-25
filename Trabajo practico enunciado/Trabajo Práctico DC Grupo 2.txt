@@ -1,0 +1,140 @@
+## Trabajo Práctico Diseño de Compiladores
+
+### UNIVERSIDAD NACIONAL DE ASUNCIÓN
+### FACULTAD POLITÉCNICA – INGENIERÍA INFORMÁTICA
+### DISEÑO DE COMPILADORES
+
+---
+
+### TRABAJO PRÁCTICO – GRUPO 2
+
+#### TOKENIZADORES EN EL PROCESAMIENTO DE LENGUAJES NATURALES (NPL)
+
+---
+
+### MOTIVACIÓN
+
+- Las herramientas de procesamiento de lenguajes se aplican sobre los lenguajes naturales y necesitan contemplar diferentes situaciones que se presentan como consecuencia propias de estos.
+- Ambigüedades, expresiones literarias o modismos propios de zonas geográficas o contextos específicos son ejemplos de estas situaciones.
+- El analizador léxico debe manejar estas situaciones, apoyándose en herramientas específicas como preprocesadores léxicos para la identificación de palabras.
+- Los tokenizadores identifican y organizan palabras para simplificar el análisis sintáctico posterior.
+
+---
+
+### Objetivo del Trabajo Práctico
+
+- Construir un tokenizador mínimo, MNLPTK (Minimal Natural Language Processing Tokenizer), como solución de speech analytics.
+- Identificar palabras (lexemas) en un texto de entrada en español, resultado de una interacción telefónica.
+- Procesar los lexemas identificados para generar una ponderación sobre la llamada considerando:
+  - Desempeño del funcionario que atiende la llamada.
+  - Evaluación de la experiencia del cliente durante la llamada.
+
+---
+
+### Evaluación de Desempeño y Experiencia
+
+- **Desempeño del Funcionario:**
+  - Obtener una métrica que califique si el funcionario se desempeñó de acuerdo a criterios establecidos.
+- **Experiencia del Cliente:**
+  - Evaluar si se pudo resolver o satisfacer la necesidad del cliente, independiente del desempeño del funcionario.
+
+---
+
+### Indicadores para Acciones de Fidelización
+
+- **Bajo desempeño del funcionario:** 
+  - Capacitación adicional.
+- **Experiencia negativa de la llamada:** 
+  - Seguimiento por el departamento comercial (descuentos, promociones, bonificaciones, resolución de problemas puntuales).
+
+---
+
+### Funcionamiento del Tokenizador
+
+- Retorna una nota de evaluación para el desempeño del funcionario y una serie de tokens que justifican la evaluación.
+- Retorna una nota de evaluación de la experiencia del cliente y tokens que justifican la evaluación.
+
+---
+
+### Descripción del Alcance del Trabajo Práctico
+
+- **Tokens Definidos:** 
+  - EXP_MALA, EXP_NEUTRA, EXP_BUENA
+  - ATC_MALA, ATC_NEUTRA, ATC_BUENA
+- **Proceso de Evaluación:**
+  - Archivos de entrada:
+    - Interacción del personal de atención al cliente.
+    - Interacción del cliente.
+  - Evaluación de la gestión del funcionario y la interacción del cliente.
+
+---
+
+### Criterios de Evaluación
+
+- **Experiencia de Atención:**
+  - Saludo de bienvenida y despedida.
+  - Identificación del cliente: uso de palabras como "documento" o "cédula".
+  - Uso de palabras como "gracias" y "por favor".
+- **Experiencia del Cliente:**
+  - Palabras negativas: mal, desastre, harto, cansado, cancelar.
+  - Palabras positivas (antónimos).
+  - Palabras neutras: se pueden clasificar manualmente como buenas o malas.
+
+---
+
+### Resultados del Análisis Léxico
+
+- Ponderación para experiencia de atención y del cliente.
+- Detalle de cómo se llegó a la ponderación:
+  - Experiencia de atención: cumplimiento de criterios.
+  - Experiencia del cliente: listado de palabras malas y buenas.
+- Posibilidad de clasificar palabras neutras.
+
+---
+
+### Mejoras
+
+- Considerar número y género en la comparación de patrones.
+- Implementar una interfaz gráfica amigable.
+
+---
+
+### Metodología
+
+- Utilizar conocimientos de clase para construir el tokenizador.
+- Posibilidad de usar un algoritmo de simulación de un AFD para obtener lexemas.
+- Utilizar herramientas IA para soporte y ayuda.
+
+---
+
+### Entregables y Defensa del Trabajo Práctico
+
+- **Entregables:**
+  - Documento en PDF:
+    - Descripción del trabajo práctico, decisiones adoptadas, mejoras, etc.
+    - Código fuente.
+    - Resultado de un caso de ejemplo.
+    - Observaciones sobre el funcionamiento.
+- **Defensa:**
+  - Presencial, no recuperable.
+  - Requisito para rendir el examen final.
+  - 15 minutos para la defensa.
+
+---
+
+### Evaluación
+
+- **Parte Práctica:**
+  - Defensa del trabajo práctico.
+  - Evaluación de eficiencia y funcionamiento.
+  - Interfaz opcional.
+- **Parte Teórica:**
+  - Evaluación del contenido del documento PDF y el algoritmo obtenido.
+
+---
+
+### Observaciones
+
+- El trabajo práctico no es recuperable.
+- Fecha de entrega: último lunes de clases antes del segundo parcial.
+- Trabajo práctico individual.

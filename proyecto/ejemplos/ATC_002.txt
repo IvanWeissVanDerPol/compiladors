@@ -1,0 +1,6 @@
+Buenas tardes, le saluda Carlos de atención al cliente, ¿en qué puedo ayudarle?
+Lamento escuchar eso. ¿Podría darme su número de cuenta para verificarlo?
+Gracias. Permítame un momento para revisar su cuenta.
+Gracias por su paciencia. He verificado que hubo un error y ya lo he corregido. ¿Desea recibir un comprobante por correo electrónico?
+Listo, he enviado el comprobante a su correo. ¿Algo más en lo que pueda ayudarle hoy?
+Gracias por contactarnos. Que tenga un buen día.

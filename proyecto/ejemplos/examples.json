@@ -1,0 +1,439 @@
+{
+    "ATC": [
+      {
+        "id": "ATC_0",
+        "conversation": [
+          "Buenos días, le saluda Joanna de atención al cliente, ¿en qué puedo ayudarle?",
+          "Puedo darle esa información. Por favor, ¿me facilita su número de documento?",
+          "Gracias, una pregunta de seguridad, ¿puede darme el año de su fecha de nacimiento?",
+          "Gracias. Verifico que su saldo es de doscientos trienta mil guaraníes a la fecha de ayer. ¿Algo más que pueda hacer por usted?",
+          "Gracias por llamar al servicio de atención al cliente.",
+          "Que tenga un buen día."
+        ]
+      },
+      {
+        "id": "ATC_1",
+        "conversation": [
+          "Buenos días, le saluda Andrea de atención al cliente, ¿en qué puedo ayudarle?",
+          "Lamento escuchar eso. Por favor, ¿me proporciona su número de cliente?",
+          "Gracias. Permítame un momento mientras verifico su cuenta.",
+          "Gracias por su paciencia. He realizado un reinicio remoto de su router, ¿puede verificar si el servicio ha mejorado?",
+          "De nada. ¿Hay algo más en lo que pueda asistirle hoy?",
+          "Gracias por llamar al servicio de atención al cliente. Que tenga un excelente día."
+        ]
+      },
+      {
+        "id": "ATC_2",
+        "conversation": [
+          "Buenas tardes, le saluda Carlos de atención al cliente, ¿en qué puedo ayudarle?",
+          "Lamento escuchar eso. ¿Podría darme su número de cuenta para verificarlo?",
+          "Gracias. Permítame un momento para revisar su cuenta.",
+          "Gracias por su paciencia. He verificado que hubo un error y ya lo he corregido. ¿Desea recibir un comprobante por correo electrónico?",
+          "Listo, he enviado el comprobante a su correo. ¿Algo más en lo que pueda ayudarle hoy?",
+          "Gracias por contactarnos. Que tenga un buen día."
+        ]
+      },
+      {
+        "id": "ATC_3",
+        "conversation": [
+          "¡Muy buenos días! Le saluda Sofía de atención al cliente. ¡Es un placer atenderle! ¿En qué puedo ayudarle hoy?",
+          "¡Por supuesto! Será un placer ayudarle con eso. ¿Podría proporcionarme su número de cliente?",
+          "¡Muchas gracias! Permítame un momentito para verificar la información. Mientras tanto, ¿cómo ha estado su día?",
+          "¡Fantástico! Gracias por preguntar. Ahora mismo estoy viendo su saldo y es de doscientos mil guaraníes. ¿Hay algo más que pueda hacer por usted hoy?",
+          "¡Ha sido un placer asistirle! ¿Le gustaría recibir algún tipo de promoción o información adicional sobre nuestros servicios?",
+          "¡Me alegra muchísimo escuchar eso! Recuerde que siempre estamos aquí para servirle. ¡Que tenga un día maravilloso y lleno de éxitos!",
+          "¡Gracias por contactarnos! ¡Hasta luego!"
+        ]
+      },
+      {
+        "id": "ATC_4",
+        "conversation": [
+          "¿Qué quiere?",
+          "Número de cliente.",
+          "Espere.",
+          "Su saldo es de doscientos mil. ¿Algo más?",
+          "No. Solo le estoy diciendo su saldo.",
+          "No tengo tiempo para eso. Llame más tarde.",
+          "No están disponibles. Llame otro día.",
+          "Haga lo que quiera. ¿Algo más?",
+          "Adiós."
+        ]
+      },
+      {
+        "id": "ATC_5",
+        "conversation": [
+          "¡Hola! Le habla del servicio de atención al cliente, ¿cómo puedo ayudarle?",
+          "Claro, ¿podría proporcionarme su número de cliente?",
+          "Perfecto, un momento mientras verifico su cuenta.",
+          "Gracias por esperar. He actualizado su información. ¿Necesita algo más?",
+          "Muchas gracias por su paciencia, que tenga un buen día."
+        ]
+      },
+      {
+        "id": "ATC_6",
+        "conversation": [
+          "Hola, ¿cómo puedo ayudarle hoy?",
+          "Entiendo, ¿podría darme su número de cliente?",
+          "Gracias, un momento mientras reviso su cuenta.",
+          "He verificado su cuenta y todo parece estar en orden. ¿Hay algo más en lo que pueda asistirle?",
+          "Gracias por contactarnos. Que tenga un buen día."
+        ]
+      },
+      {
+        "id": "ATC_7",
+        "conversation": [
+          "Buenas tardes, ¿en qué puedo ayudarle?",
+          "Claro, ¿podría proporcionarme su número de cliente?",
+          "Gracias, permítame un momento para verificar su información.",
+          "Todo está correcto. ¿Necesita algo más?",
+          "Gracias por su paciencia. Que tenga un buen día."
+        ]
+      },
+      {
+        "id": "ATC_8",
+        "conversation": [
+          "¡Hola! ¿Cómo puedo asistirle hoy?",
+          "Entiendo, ¿me podría dar su número de cliente?",
+          "Gracias, un momento por favor.",
+          "He revisado su cuenta y todo está bien. ¿Hay algo más en lo que pueda ayudarle?",
+          "Gracias por contactarnos. Que tenga un excelente día."
+        ]
+      },
+      {
+        "id": "ATC_9",
+        "conversation": [
+          "Buenas, ¿en qué puedo ayudarle?",
+          "Claro, ¿me puede proporcionar su número de cliente?",
+          "Gracias, permítame un momento.",
+          "He verificado su cuenta y todo está en orden. ¿Necesita algo más?",
+          "Gracias por contactarnos. Que tenga un buen día."
+        ]
+      },
+      {
+        "id": "ATC_10",
+        "conversation": [
+          "Hola, ¿cómo puedo ayudarle hoy?",
+          "Entiendo, ¿podría darme su número de cliente?",
+          "Gracias, un momento mientras reviso su cuenta.",
+          "He verificado su cuenta y todo parece estar en orden. ¿Hay algo más en lo que pueda asistirle?",
+          "Gracias por contactarnos. Que tenga un buen día."
+        ]
+      },
+      {
+        "id": "ATC_11",
+        "conversation": [
+          "Buenas tardes, ¿en qué puedo ayudarle?",
+          "Claro, ¿podría proporcionarme su número de cliente?",
+          "Gracias, permítame un momento para verificar su información.",
+          "Todo está correcto. ¿Necesita algo más?",
+          "Gracias por su paciencia. Que tenga un buen día."
+        ]
+      },
+      {
+        "id": "ATC_12",
+        "conversation": [
+          "¡Hola! ¿Cómo puedo asistirle hoy?",
+          "Entiendo, ¿me podría dar su número de cliente?",
+          "Gracias, un momento por favor.",
+          "He revisado su cuenta y todo está bien. ¿Hay algo más en lo que pueda ayudarle?",
+          "Gracias por contactarnos. Que tenga un excelente día."
+        ]
+      },
+      {
+        "id": "ATC_13",
+        "conversation": [
+          "Buenas, ¿en qué puedo ayudarle?",
+          "Claro, ¿me puede proporcionar su número de cliente?",
+          "Gracias, permítame un momento.",
+          "He verificado su cuenta y todo está en orden. ¿Necesita algo más?",
+          "Gracias por contactarnos. Que tenga un buen día."
+        ]
+      },
+      {
+        "id": "ATC_14",
+        "conversation": [
+          "Hola, ¿cómo puedo ayudarle hoy?",
+          "Entiendo, ¿podría darme su número de cliente?",
+          "Gracias, un momento mientras reviso su cuenta.",
+          "He verificado su cuenta y todo parece estar en orden. ¿Hay algo más en lo que pueda asistirle?",
+          "Gracias por contactarnos. Que tenga un buen día."
+        ]
+      },
+      {
+        "id": "ATC_15",
+        "conversation": [
+          "Buenas tardes, ¿en qué puedo ayudarle?",
+          "Claro, ¿podría proporcionarme su número de cliente?",
+          "Gracias, permítame un momento para verificar su información.",
+          "Todo está correcto. ¿Necesita algo más?",
+          "Gracias por su paciencia. Que tenga un buen día."
+        ]
+      },
+      {
+        "id": "ATC_16",
+        "conversation": [
+          "Buenas tardes, lamento escuchar que tiene un problema terrible con su conexión a Internet.",
+          "Por favor, proporcióname su número de cliente para verificar su cuenta.",
+          "Gracias, permítame un momento mientras intento reiniciar el router de forma remota.",
+          "Lamento informarle que el problema persiste, esto es inaceptable.",
+          "Entiendo su frustración, esto es un desastre. Voy a escalar su caso a un supervisor."
+        ]
+      },
+      {
+        "id": "ATC_17",
+        "conversation": [
+          "Buenas tardes, entiendo que su saldo es incorrecto, esto es muy preocupante.",
+          "Por favor, proporcióname su número de cliente para revisar su cuenta.",
+          "Gracias, permítame un momento para verificar los detalles.",
+          "Esto es indignante, parece que hubo un error en el sistema.",
+          "Lamento mucho esta situación, esto es un fraude. Voy a escalar su caso a un supervisor."
+        ]
+      },
+      {
+        "id": "ATC_18",
+        "conversation": [
+          "Hola, lamento escuchar que necesita ayuda con su cuenta, esto es un desastre.",
+          "Por favor, proporcióname su número de cliente para revisar su cuenta.",
+          "Gracias, permítame un momento para verificar los detalles.",
+          "Esto es incompetente, parece que hubo un error en el sistema.",
+          "Lamento mucho esta situación, esto es ineficiente. Voy a escalar su caso a un supervisor."
+        ]
+      },
+      {
+        "id": "ATC_19",
+        "conversation": [
+          "Buenas tardes, lamento escuchar que tiene un problema horrible con su factura.",
+          "Por favor, proporcióname su número de cliente para revisar los detalles.",
+          "Gracias, permítame un momento para verificar los detalles.",
+          "Esto es espantoso, parece que hubo un error en el sistema.",
+          "Lamento mucho esta situación, esto es abominable. Voy a escalar su caso a un supervisor."
+        ]
+      },
+      {
+        "id": "ATC_20",
+        "conversation": [
+          "Hola, lamento escuchar que tiene un problema con el estado de su pedido, esto es un desastre.",
+          "Por favor, proporcióname su número de pedido para revisar los detalles.",
+          "Gracias, permítame un momento para verificar los detalles.",
+          "Esto es inaceptable, parece que hubo un error en el sistema.",
+          "Lamento mucho esta situación, esto es un desastre. Voy a escalar su caso a un supervisor."
+        ]
+      }
+    ],
+    "EXP": [
+      {
+        "id": "EXP_0",
+        "conversation": [
+          "Buen dia. Desde ayer que no puedo consultar mi saldo.",
+          "Claro, tres millones doscientos sesenta mil cero sesenta y ocho.",
+          "En año de mi nacimiento es mil novecientos noventa y seis.",
+          "No, muchas gracias. Usted ha sido my amable.",
+          "Hasta luego."
+        ]
+      },
+      {
+        "id": "EXP_1",
+        "conversation": [
+          "Buen día. He estado teniendo problemas con mi servicio de internet.",
+          "Sí, claro, es el 12345678.",
+          "Claro, no hay problema.",
+          "Sí, parece que ya está funcionando mejor. Muchas gracias por su ayuda.",
+          "No, eso sería todo. Gracias nuevamente."
+        ]
+      },
+      {
+        "id": "EXP_2",
+        "conversation": [
+          "Buenas tardes. Tengo una queja sobre un cobro incorrecto en mi factura.",
+          "Sí, es el 98765432.",
+          "Por supuesto.",
+          "Sí, por favor.",
+          "No, eso sería todo. Gracias."
+        ]
+      },
+      {
+        "id": "EXP_3",
+        "conversation": [
+          "¡Buenos días! Quisiera verificar mi saldo, por favor.",
+          "Claro, es el 12345678.",
+          "Muy bien, gracias. ¿Y el suyo?",
+          "No, eso es todo. Muchas gracias por la información.",
+          "No, gracias. Estoy muy satisfecho con el servicio.",
+          "¡Gracias! Igualmente, que tenga un excelente día"
+        ]
+      },
+      {
+        "id": "EXP_4",
+        "conversation": [
+          "Buenas tardes. Quisiera saber cuál es mi saldo.",
+          "Es el 87654321.",
+          "...",
+          "¿Podría explicarme cómo se calculó ese saldo?",
+          "Pero necesito más detalles, por favor.",
+          "Esto es inaceptable. Exijo hablar con un supervisor.",
+          "Esto es un desastre. Voy a presentar una queja formal.",
+          "No. Adiós"
+        ]
+      },
+      {
+        "id": "EXP_5",
+        "conversation": [
+          "Hola, tengo un problema con mi conexión a Internet.",
+          "Sí, el número de cliente es 11223344.",
+          "Entiendo, por favor intente reiniciar el router.",
+          "Gracias, ahora parece estar funcionando bien.",
+          "Eso sería todo, muchas gracias por su ayuda."
+        ]
+      },
+      {
+        "id": "EXP_6",
+        "conversation": [
+          "Hola, necesito ayuda con mi cuenta.",
+          "Sí, mi número de cliente es 55667788.",
+          "Gracias, esperaré su respuesta.",
+          "Perfecto, muchas gracias por la asistencia.",
+          "Eso sería todo, buen día."
+        ]
+      },
+      {
+        "id": "EXP_7",
+        "conversation": [
+          "Buenas tardes, tengo un problema con mi factura.",
+          "El número de cliente es 99887766.",
+          "Entiendo, por favor revise el detalle.",
+          "Gracias por la aclaración.",
+          "No, eso es todo. Gracias."
+        ]
+      },
+      {
+        "id": "EXP_8",
+        "conversation": [
+          "Hola, quisiera saber el estado de mi pedido.",
+          "Mi número de pedido es 44556677.",
+          "Gracias por la información.",
+          "Perfecto, estaré esperando.",
+          "Eso es todo, muchas gracias."
+        ]
+      },
+      {
+        "id": "EXP_9",
+        "conversation": [
+          "Buenos días, tengo una consulta sobre mi suscripción.",
+          "Mi número de suscripción es 22334455.",
+          "Gracias por la ayuda.",
+          "Entiendo, muchas gracias.",
+          "Eso sería todo, buen día."
+        ]
+      },
+      {
+        "id": "EXP_10",
+        "conversation": [
+          "Buenas tardes, necesito soporte técnico.",
+          "Mi número de cliente es 66778899.",
+          "Gracias, esperaré su respuesta.",
+          "Perfecto, muchas gracias por la asistencia.",
+          "Eso sería todo, buen día."
+        ]
+      },
+      {
+        "id": "EXP_11",
+        "conversation": [
+          "Hola, tengo un problema con mi conexión a Internet.",
+          "Sí, el número de cliente es 11223344.",
+          "Entiendo, por favor intente reiniciar el router.",
+          "Gracias, ahora parece estar funcionando bien.",
+          "Eso sería todo, muchas gracias por su ayuda."
+        ]
+      },
+      {
+        "id": "EXP_12",
+        "conversation": [
+          "Buenas tardes, quisiera saber cuál es mi saldo.",
+          "Es el 87654321.",
+          "Gracias por la información.",
+          "Perfecto, muchas gracias.",
+          "Eso sería todo, buen día."
+        ]
+      },
+      {
+        "id": "EXP_13",
+        "conversation": [
+          "Hola, necesito ayuda con mi cuenta.",
+          "Sí, mi número de cliente es 55667788.",
+          "Gracias, esperaré su respuesta.",
+          "Perfecto, muchas gracias por la asistencia.",
+          "Eso sería todo, buen día."
+        ]
+      },
+      {
+        "id": "EXP_14",
+        "conversation": [
+          "Buenas tardes, tengo un problema con mi factura.",
+          "El número de cliente es 99887766.",
+          "Entiendo, por favor revise el detalle.",
+          "Gracias por la aclaración.",
+          "No, eso es todo. Gracias."
+        ]
+      },
+      {
+        "id": "EXP_15",
+        "conversation": [
+          "Hola, quisiera saber el estado de mi pedido.",
+          "Mi número de pedido es 44556677.",
+          "Gracias por la información.",
+          "Perfecto, estaré esperando.",
+          "Eso es todo, muchas gracias."
+        ]
+      },
+      {
+        "id": "EXP_16",
+        "conversation": [
+          "Hola, tengo un problema terrible con mi conexión a Internet.",
+          "Sí, el número de cliente es 11223344.",
+          "Esto es inaceptable, por favor intente reiniciar el router.",
+          "Esto es un desastre, sigue sin funcionar.",
+          "Estoy harto de este servicio, adiós."
+        ]
+      },
+      {
+        "id": "EXP_17",
+        "conversation": [
+          "Buenas tardes, quisiera saber por qué mi saldo es incorrecto.",
+          "Es el 87654321.",
+          "Esto es indignante, necesito una explicación.",
+          "Esto es un fraude, no puedo creerlo.",
+          "Voy a cancelar mi cuenta, adiós."
+        ]
+      },
+      {
+        "id": "EXP_18",
+        "conversation": [
+          "Hola, necesito ayuda con mi cuenta, es un desastre.",
+          "Sí, mi número de cliente es 55667788.",
+          "Esto es incompetente, esperaré su respuesta.",
+          "Esto es ineficiente, no puedo seguir así.",
+          "Voy a presentar una queja formal, adiós."
+        ]
+      },
+      {
+        "id": "EXP_19",
+        "conversation": [
+          "Buenas tardes, tengo un problema horrible con mi factura.",
+          "El número de cliente es 99887766.",
+          "Esto es espantoso, por favor revise el detalle.",
+          "Esto es abominable, no puedo aceptarlo.",
+          "Voy a hablar con un supervisor, adiós."
+        ]
+      },
+      {
+        "id": "EXP_20",
+        "conversation": [
+          "Hola, quisiera saber el estado de mi pedido, es un desastre.",
+          "Mi número de pedido es 44556677.",
+          "Esto es inaceptable, necesito una respuesta.",
+          "Esto es un desastre, no puedo esperar más.",
+          "Voy a cancelar mi pedido, adiós."
+        ]
+      }
+    ]
+}
