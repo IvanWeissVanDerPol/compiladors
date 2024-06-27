@@ -8,11 +8,11 @@ Performance Score: 2
 
 
 File: ATC_001.txt
-Undefined Words: 6
-Positive Words: 7
+Undefined Words: 3
+Positive Words: 8
 Negative Words: 0
-Neutral Words: 63
-Experience Score: 7
+Neutral Words: 65
+Experience Score: 8
 Performance Score: 2
 
 
@@ -26,37 +26,37 @@ Performance Score: 4
 
 
 File: ATC_003.txt
-Undefined Words: 12
+Undefined Words: 11
 Positive Words: 10
 Negative Words: 0
-Neutral Words: 95
+Neutral Words: 96
 Experience Score: 10
 Performance Score: 3
 
 
 File: ATC_004.txt
-Undefined Words: 5
-Positive Words: 0
+Undefined Words: 1
+Positive Words: 1
 Negative Words: 0
-Neutral Words: 37
-Experience Score: 0
+Neutral Words: 40
+Experience Score: 1
 Performance Score: 2
 
 
 File: ATC_005.txt
-Undefined Words: 7
+Undefined Words: 6
 Positive Words: 5
 Negative Words: 0
-Neutral Words: 34
+Neutral Words: 35
 Experience Score: 5
 Performance Score: 3
 
 
 File: ATC_006.txt
-Undefined Words: 7
+Undefined Words: 6
 Positive Words: 3
 Negative Words: 0
-Neutral Words: 34
+Neutral Words: 35
 Experience Score: 3
 Performance Score: 2
 
@@ -89,10 +89,10 @@ Performance Score: 2
 
 
 File: ATC_010.txt
-Undefined Words: 7
+Undefined Words: 6
 Positive Words: 3
 Negative Words: 0
-Neutral Words: 34
+Neutral Words: 35
 Experience Score: 3
 Performance Score: 2
 
@@ -125,10 +125,10 @@ Performance Score: 2
 
 
 File: ATC_014.txt
-Undefined Words: 7
+Undefined Words: 6
 Positive Words: 3
 Negative Words: 0
-Neutral Words: 34
+Neutral Words: 35
 Experience Score: 3
 Performance Score: 2
 
@@ -143,47 +143,47 @@ Performance Score: 2
 
 
 File: ATC_016.txt
-Undefined Words: 17
+Undefined Words: 15
 Positive Words: 2
-Negative Words: 3
-Neutral Words: 37
-Experience Score: -1
+Negative Words: 4
+Neutral Words: 38
+Experience Score: -2
 Performance Score: 0
 
 
 File: ATC_017.txt
-Undefined Words: 15
+Undefined Words: 13
 Positive Words: 2
-Negative Words: 2
+Negative Words: 4
 Neutral Words: 37
-Experience Score: 0
+Experience Score: -2
 Performance Score: 1
 
 
 File: ATC_018.txt
-Undefined Words: 13
+Undefined Words: 12
 Positive Words: 2
-Negative Words: 3
+Negative Words: 4
 Neutral Words: 37
-Experience Score: -1
+Experience Score: -2
 Performance Score: 2
 
 
 File: ATC_019.txt
-Undefined Words: 14
+Undefined Words: 13
 Positive Words: 2
-Negative Words: 3
+Negative Words: 4
 Neutral Words: 36
-Experience Score: -1
+Experience Score: -2
 Performance Score: 1
 
 
 File: ATC_020.txt
-Undefined Words: 14
+Undefined Words: 13
 Positive Words: 2
-Negative Words: 3
+Negative Words: 4
 Neutral Words: 40
-Experience Score: -1
+Experience Score: -2
 Performance Score: 2
 
 
@@ -224,9 +224,9 @@ Performance Score: 2
 
 
 File: EXP_004.txt
-Undefined Words: 19
-Positive Words: 1
-Negative Words: 2
+Undefined Words: 17
+Positive Words: 2
+Negative Words: 3
 Neutral Words: 21
 Experience Score: -1
 Performance Score: 2
@@ -332,45 +332,45 @@ Performance Score: 3
 
 
 File: EXP_016.txt
-Undefined Words: 10
-Positive Words: 1
+Undefined Words: 9
+Positive Words: 2
 Negative Words: 4
 Neutral Words: 23
-Experience Score: -3
-Performance Score: 1
-
-
-File: EXP_017.txt
-Undefined Words: 10
-Positive Words: 1
-Negative Words: 3
-Neutral Words: 17
 Experience Score: -2
 Performance Score: 1
 
 
+File: EXP_017.txt
+Undefined Words: 7
+Positive Words: 2
+Negative Words: 5
+Neutral Words: 17
+Experience Score: -3
+Performance Score: 1
+
+
 File: EXP_018.txt
-Undefined Words: 13
-Positive Words: 1
-Negative Words: 3
+Undefined Words: 11
+Positive Words: 2
+Negative Words: 4
 Neutral Words: 18
 Experience Score: -2
 Performance Score: 1
 
 
 File: EXP_019.txt
-Undefined Words: 11
-Positive Words: 1
-Negative Words: 3
+Undefined Words: 9
+Positive Words: 2
+Negative Words: 4
 Neutral Words: 20
 Experience Score: -2
 Performance Score: 2
 
 
 File: EXP_020.txt
-Undefined Words: 9
-Positive Words: 1
-Negative Words: 4
+Undefined Words: 7
+Positive Words: 2
+Negative Words: 5
 Neutral Words: 20
 Experience Score: -3
 Performance Score: 3

@@ -38,42 +38,122 @@ The Language Tokenizer GUI is a Python-based application designed to analyze tex
 - `evaluate_performance(conversation)`: Evaluates performance based on predefined conversational criteria.
 - `evaluate_experience(conversation)`: Evaluates the overall experience by scoring positive and negative word occurrences.
 
-### 5. Tokens Configuration (tokens.json)
-**Purpose:** Stores lists of predefined positive, negative, and neutral words.  
-**Structure:**
-- `"BUENAS"`: List of positive words.
-- `"MALAS"`: List of negative words.
-- `"NEUTRAS"`: List of neutral words.
+**Main Logic:**
+Main Logic and Important Functions
+Tokenizer Class Initialization and JSON Loading
 
-### 6. GUI Helpers (gui_helpers.py)
-**Purpose:** Provides helper functions for GUI operations such as file dialogs, token processing, and displaying results.  
-**Functions:**
-- `process_tokens(tokenizer, text)`: Processes text to tokenize and identify non-defined words.
-- `open_text_file(entry, text_widget, tokenizer, undefined_words_frame, evaluation_frame, default_path=None)`: Handles file opening and text processing.
-- `update_entry_widget(entry, file_path)`: Updates the file path entry widget.
-- `update_text_widget_with_tokens(text_widget, text, tokens, non_defined_words, tokenizer)`: Displays tokens in the text widget with special formatting for undefined words.
-- `display_undefined_words(non_defined_words, tokenizer, frame, text_widget, text, evaluation_frame)`: Displays and manages undefined words.
-- `evaluate_text(tokens, tokenizer, non_defined_words, conversation)`: Evaluates the text and returns a dictionary of results.
-- `generate_report(tokenizer, examples_folder, report_file)`: Generates a report and a graph based on the evaluation of text files.
 
-## How the Project Works
-### Initialization:
-- The application starts by running main.py, which initializes the Tkinter root window and starts the GUI.
+```
 
-### GUI Setup:
-- `LanguageTokenizerGUI` sets up the main window with sections for Customer Service and Customer Experience files.
-- Menu options allow users to open JSON files and update tokens.
+class Tokenizer:
+    def __init__(self, positive_words, negative_words, neutral_words):
+        log_message("Tokenizer.__init__ called")
+        self.positive_words = positive_words
+        self.negative_words = negative_words
+        self.neutral_words = neutral_words
 
-### File Handling:
-- Users can open text files, which are read and displayed in the respective sections.
-- The text is tokenized and evaluated using the `Tokenizer` class, highlighting undefined words and displaying evaluation results.
+    @classmethod
+    def from_json(cls, json_file_path):
+        """
+        Class method to create a Tokenizer instance from a JSON file.
+        The JSON file should contain three keys: 'BUENAS', 'MALAS', and 'NEUTRAS',
+        which correspond to positive, negative, and neutral words respectively.
+        """
+        log_message("Tokenizer.from_json called")
+        with open(json_file_path, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+        return cls(
+            positive_words=data['BUENAS'],
+            negative_words=data['MALAS'],
+            neutral_words=data['NEUTRAS']
+        )
 
-### Tokenization and Evaluation:
-- The `Tokenizer` class normalizes and tokenizes the text.
-- It evaluates tokens against predefined positive, negative, and neutral words.
-- Performance and experience evaluations are conducted based on specific criteria and word counts.
+    def normalize_word(self, original_word):
+        """
+        Normalize a word to handle number and gender variations.
+        Converts the word to lowercase, removes plural 's', and converts feminine 'a' to masculine 'o'.
+        Returns 'neutral_number' for digit-only words.
+        """
+        updated_word = original_word.lower()
+        if updated_word.isdigit():
+            return 'neutral_number'  # Special token for numbers
+        if updated_word.endswith('s'):
+            updated_word = updated_word[:-1]  # Remove plural 's'
+        if updated_word.endswith('a'):
+            updated_word = updated_word[:-1] + 'o'  # Convert feminine to masculine
+        return updated_word
 
-### Report Generation:
-- Users can generate reports summarizing the analysis of multiple text files.
-- Reports include counts of positive, negative, and neutral words, as well as performance and experience scores.
-- A graph visualizing the evaluation scores is generated and saved.
+    def tokenize(self, text):
+        """
+        Tokenize the input text into individual words.
+        Handles punctuation and special characters, converts text to lowercase,
+        and normalizes each token.
+        """
+        log_message(f"Tokenizer.tokenize called with text={text}")
+        tokens = re.findall(r'\b\w+\b', text.lower())
+        log_message(f"Tokenized text into tokens: {tokens}")
+        normalized_tokens = [(token, self.normalize_word(token)) for token in tokens]
+        log_message(f"Normalized tokens: {normalized_tokens}")
+        return normalized_tokens
+
+    def def evaluate(self, tokens):
+        """
+        Evaluate the tokens to count positive, negative, and neutral words.
+        Returns a dictionary with counts for each category.
+        """
+        log_message(f"Tokenizer.evaluate called with tokens={tokens}")
+        positive_count = sum(1 for token in tokens if token in self.positive_words)
+        negative_count = sum(1 for token in tokens if token in self.negative_words)
+        neutral_count = sum(1 for token in tokens if token in self.neutral_words)
+        log_message(f"Evaluation results - positive: {positive_count}, negative: {negative_count}, neutral: {neutral_count}")
+        
+        return {
+            'positive': positive_count,
+            'negative': negative_count,
+            'neutral': neutral_count
+        }
+
+     def evaluate_performance(self, conversation):
+        """
+        Evaluate the performance of a conversation based on predefined criteria.
+        Checks for the presence of specific phrases in the conversation and calculates a performance score.
+        """
+        log_message("Tokenizer.evaluate_performance called")
+        criteria = {
+            "greeting": ["Buenas noches","¿Cómo está?","¿Cómo le va?","¡Bienvenido!","¡Bienvenida!","¿En qué puedo ayudarle?","¿Cómo puedo asistirte?","Hola, ¿cómo estás?","Hola, ],
+            "ask_number": ["número de teléfono","número de cuenta","número de pedido","número de referencia","número de identificación","número de transacción","número de tarjeta"],
+            "provide_info": ["detalle","balance","información","detalles","estado","disponible","transacciones","última operación","historial","datos","documentos","actualización","movimientos"],
+            "offer_assistance": ["puedo ayudarle","necesita ayuda","puedo asistirte","puedo hacer algo más","algo más que pueda hacer","requiere asistencia","alguna otra cosa","algo adicional"],
+            "end_politely": ["hasta pronto","nos vemos","que tenga buen día","que tenga buena tarde","que tenga buena noche","que pase bien","cuídese","le agradezco","gracias por su tiempo"]
+        }
+        performance_score = 0
+        for key, phrases in criteria.items():
+            if any(phrase in conversation.lower() for phrase in phrases):
+                performance_score += 1
+                log_message(f"Criteria '{key}' met")
+        
+        log_message(f"Performance score: {performance_score}/{len(criteria)}")
+        return performance_score
+
+    def evaluate_experience(self, conversation):
+        """
+        Evaluate the overall experience of a conversation by scoring positive and negative word occurrences.
+        Tokenizes the conversation, counts positive, negative, and neutral words, and calculates an experience score.
+        """
+        log_message("Tokenizer.evaluate_experience called")
+        tokens = self.tokenize(conversation)
+        positive_count = sum(1 for _, normalized_word in tokens if normalized_word in self.positive_words)
+        negative_count = sum(1 for _, normalized_word in tokens if normalized_word in self.negative_words)
+        neutral_count = sum(1 for _, normalized_word in tokens if normalized_word in self.neutral_words)
+        
+        experience_score = positive_count - negative_count
+        log_message(f"Experience score: {experience_score} (positive: {positive_count}, negative: {negative_count}, neutral: {neutral_count})")
+        
+        return {
+            "positive": positive_count,
+            "negative": negative_count,
+            "neutral": neutral_count,
+            "score": experience_score
+        }
+
+```
